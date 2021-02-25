@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flectra>
+    <record id="view_employee_form" model="ir.ui.view">
+        <field name="name">hr.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="html">
+        <page name="hr_settings" position="after">
+            
+                
+                
+                  <page string="Legal Issues">
+                  <field name = "hr_details">
+                        <tree editable="bottom">
+                           <field name = "issue"/>
+                           <field name = "status"/>
+                           <field name = "date"/>
+                           <field name = "sorted_id"/>
+                           <field name = "emp_id" invisible="1"/>
+                        </tree>
+                        <!-- <form>
+                          <group>
+                            <group>
+                              <field name = "doc_name"/>
+                            </group>
+                            <group>
+                              <field name = "remark"/>
+                            </group>
+                            <group>
+                              <field name = "date"/>
+                            </group>
+                            <group>
+                              <field name = "hos_name"/>
+                            </group>
+                            <group>
+                              <field name = "paid_amo"/>
+                            </group>
+                            <group>
+                              <field name = "pati_status"/>
+                            </group>
+                          </group>
+                        </form> -->
+                  </field>
+                  </page>
+                </page>
+        </field>
+    </record>
+</flectra>
